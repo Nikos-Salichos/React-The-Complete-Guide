@@ -5,7 +5,7 @@ function ExpenseItem(props) {
 
   const expenseDate = new Date(2021, 2, 28);
   const expenseTitle = 'Car Insurance';
-  const expenseAmount1 = 300;
+  const expenseAmount = 300;
 
   return (
     <div className="expense-item">
