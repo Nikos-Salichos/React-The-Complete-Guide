@@ -2,7 +2,7 @@ import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate';
 import React from 'react';
 
-function Investments(props) {
+function Investment(props) {
 
     return (
         <div className='expense-item'>
@@ -15,4 +15,4 @@ function Investments(props) {
     );
 }
 
-export default Investments;
+export default Investment;

@@ -5,7 +5,6 @@ import React from 'react';
 function ExpenseItem(props) {
   //props is one parameter that is an object that hold all the attributes as properties
 
-
   return (
     <div className="expense-item">
       <ExpenseDate date={props.date} />

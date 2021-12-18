@@ -1,5 +1,5 @@
 import ExpenseItem from './components/ExpenseItem';
-import Investments from './components/Investments';
+import Investment from './components/Investments';
 
 function App() {
 
@@ -25,9 +25,9 @@ function App() {
       <ExpenseItem title={expenses[1].title} amount={expenses[1].amount} date={expenses[1].date} />
       <ExpenseItem title={expenses[2].title} amount={expenses[2].amount} date={expenses[2].date} />
       <ExpenseItem title={expenses[3].title} amount={expenses[3].amount} date={expenses[3].date} />
-      <Investments title={investments[0].title} amount={investments[0].amount} date={investments[0].date} />
-      <Investments title={investments[1].title} amount={investments[1].amount} date={investments[1].date} />
-      <Investments title={investments[2].title} amount={investments[2].amount} date={investments[2].date} />
+      <Investment title={investments[0].title} amount={investments[0].amount} date={investments[0].date} />
+      <Investment title={investments[1].title} amount={investments[1].amount} date={investments[1].date} />
+      <Investment title={investments[2].title} amount={investments[2].amount} date={investments[2].date} />
     </div>
   );
 }
