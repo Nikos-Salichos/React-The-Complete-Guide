@@ -15,7 +15,8 @@ function App() {
   const investments = [
     { id: 1, title: 'ETFs', amount: 100, date: new Date(2021, 2, 10) },
     { id: 2, title: 'CryptoCurrencies', amount: 50, date: new Date(2021, 2, 20) },
-    { id: 3, title: 'Stocks', amount: 150, date: new Date(2021, 2, 29) }
+    { id: 3, title: 'Stocks', amount: 150, date: new Date(2021, 2, 29) },
+    { id: 4, title: 'Bonds', amount: 100, date: new Date(2021, 2, 30) }
   ]
 
   return (
@@ -28,6 +29,7 @@ function App() {
       <Investment title={investments[0].title} amount={investments[0].amount} date={investments[0].date} />
       <Investment title={investments[1].title} amount={investments[1].amount} date={investments[1].date} />
       <Investment title={investments[2].title} amount={investments[2].amount} date={investments[2].date} />
+      <Investment title={investments[3].title} amount={investments[3].amount} date={investments[3].date} />
     </div>
   );
 }
