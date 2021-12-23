@@ -17,7 +17,7 @@ function App() {
     { id: 1, title: 'ETFs', amount: 100, date: new Date(2021, 2, 10) },
     { id: 2, title: 'CryptoCurrencies', amount: 50, date: new Date(2021, 2, 20) },
     { id: 3, title: 'Stocks', amount: 150, date: new Date(2021, 2, 29) },
-    { id: 4, title: 'Bonds', amount: 100, date: new Date(2021, 2, 30) }
+    { id: 4, title: 'Bonds', amount: 30, date: new Date(2021, 2, 30) }
   ]
 
   return (
