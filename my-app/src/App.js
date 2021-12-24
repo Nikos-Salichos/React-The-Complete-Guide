@@ -1,7 +1,7 @@
 import ExpenseItem from './components/Expenses/ExpenseItem';
 import Investment from './components/Expenses/Investments';
 
-function App() {
+const App = () => {
 
   //4 expense object items
   const expenses = [

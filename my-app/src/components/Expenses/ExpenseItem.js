@@ -3,7 +3,7 @@ import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 
-function ExpenseItem(props) {
+cont ExpenseItem = (props) => {
   //props is one parameter that is an object that hold all the attributes as properties
 
   return (
