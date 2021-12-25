@@ -15,15 +15,23 @@ const ExpenseItem = (props) => {
     console.log(title) //console.log is not updated the 1st time it changes state, it updates exactly the next
   }
 
+  var currentDate = new Date();
+
+  const [date, setDate] = useState(props.date);
+  const dateHandler = () => {
+    setDate(currentDate);
+  }
+
   return (
     <Card className="expense-item">
-      <ExpenseDate date={props.date} />
+      <ExpenseDate date={date} />
+      <button onClick={dateHandler}>Change Date</button>
       <div className="expense-item__description">
         <h2>{title}</h2>
         <div className="expense-item__price">{props.amount}€</div>
       </div>
       <button onClick={clickHandler}>Change Title</button>
-    </Card>
+    </Card >
   );
 }
 
