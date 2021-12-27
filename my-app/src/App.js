@@ -9,7 +9,7 @@ const App = () => {
     { id: 2, title: 'Car insurance 6 Months', amount: 200, date: new Date(2021, 2, 30) },
     { id: 3, title: 'Food Monthly', amount: 200, date: new Date(2021, 2, 25) },
     { id: 4, title: 'Gifts', amount: 40, date: new Date(2021, 2, 22) },
-    { id: 5, title: 'Telephone Bills', amount: 10, date: new Date(2021, 2, 23) },
+    { id: 5, title: 'Telephone Bills', amount: 15, date: new Date(2021, 2, 23) },
   ];
 
 
