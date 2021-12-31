@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import './ExpenseForm.css'
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
 
     const [enteredTitle, setEnteredTitle] = useState('',);
     const [enteredAmount, setEnteredAmount] = useState('');
@@ -28,7 +28,12 @@ const ExpenseForm = () => {
             date: new Date(enteredDate)
         }
 
-        console.log(expenseData)
+        //when i execute it by click submit form , it triggers the NewExpense.js.
+        //ExpenseForm is child Component and Parent Component is NewExpense.js
+        props.onSaveExpenseData(expenseData); //execute function that takes object as parameter
+
+        console.log(expenseData + "Apo ExpenseForm.js")
+
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
