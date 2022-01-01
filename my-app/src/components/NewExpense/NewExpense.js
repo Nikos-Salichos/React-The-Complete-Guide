@@ -1,3 +1,6 @@
+// Data/State is generated here
+// Lifting state from this component to App.js componenent
+
 import React from "react"
 import "./NewExpense.css"
 import ExpenseForm from "./ExpenseForm";

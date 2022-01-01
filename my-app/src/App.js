@@ -1,5 +1,10 @@
+// This component has access to both involved components
+//Parent component
+
+
 import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
+
 
 const App = () => {
 
