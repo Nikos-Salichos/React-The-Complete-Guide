@@ -19,11 +19,14 @@ function Expenses(props) {
         <div>
             <Card className='expenses'>
                 <ExpensesFilter selected={enteredExpenseFilter} onChangeFilter={expenseFilterChangeHandler}></ExpensesFilter>
-                <ExpenseItem title={props.items[0].title} amount={props.items[0].amount} date={props.items[0].date} />
-                <ExpenseItem title={props.items[0].title} amount={props.items[0].amount} date={props.items[0].date} />
-                <ExpenseItem title={props.items[0].title} amount={props.items[0].amount} date={props.items[0].date} />
+                {props.items.map(expense =>
+                    <ExpenseItem
+                        key={expense.id}
+                        title={expense.title}
+                        amount={expense.amount}
+                        date={expense.date}></ExpenseItem>)}
             </Card>
-        </div>
+        </div >
     );
 }
 
