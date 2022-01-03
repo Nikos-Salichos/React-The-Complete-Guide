@@ -7,11 +7,11 @@ import Expenses from './components/Expenses/Expenses';
 
 //4 expense object items
 const dummyExpenses = [
-  { id: 1, title: 'Gasoline Monthly', amount: 150, date: new Date(2021, 2, 28) },
+  { id: 1, title: 'Gasoline Monthly', amount: 150, date: new Date(2022, 2, 28) },
   { id: 2, title: 'Car insurance 6 Months', amount: 200, date: new Date(2021, 2, 30) },
   { id: 3, title: 'Food Monthly', amount: 200, date: new Date(2021, 2, 25) },
-  { id: 4, title: 'Gifts', amount: 40, date: new Date(2021, 2, 22) },
-  { id: 5, title: 'Telephone Bills', amount: 15, date: new Date(2021, 2, 23) },
+  { id: 4, title: 'Gifts', amount: 40, date: new Date(2020, 2, 22) },
+  { id: 5, title: 'Telephone Bills', amount: 15, date: new Date(2012, 2, 23) },
 ];
 
 const App = () => {
@@ -24,6 +24,7 @@ const App = () => {
   const addExpenseHandler = (expense) => {
     SetExpenses(previousExpenses => { return [expense, ...expenses] })
   };
+
 
 
   return (
