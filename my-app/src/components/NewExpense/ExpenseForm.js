@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import './ExpenseForm.css'
+import './ExpenseButton.js'
 
 const ExpenseForm = (props) => {
 
@@ -32,12 +33,12 @@ const ExpenseForm = (props) => {
         //ExpenseForm is child Component and Parent Component is NewExpense.js
         props.onSaveExpenseData(expenseData); //execute function that takes object as parameter
 
-        console.log(expenseData + "Apo ExpenseForm.js")
-
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
     };
+
+
 
     return <form onSubmit={submitHandler} >
         <div className="new-expense__controls">
@@ -55,9 +56,13 @@ const ExpenseForm = (props) => {
             </div>
         </div>
         <div className="new-expense__actions">
-            <button type="submit">Add expense</button>
+            <button type="submit" >Add expense</button>
+            <button type="button" onClick={props.onCancel} >Cancel</button>
         </div>
     </form>
+
+
+
 }
 
 export default ExpenseForm;
