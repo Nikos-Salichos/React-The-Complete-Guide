@@ -3,10 +3,11 @@
 
 import './Expenses.css'
 import React, { useState } from 'react'
+import linq from "linq";
 import Card from '../UI/Card';
 import ExpensesFilter from './ExpenseFilter';
 import ExpensesList from './ExpensesList';
-import linq from "linq";
+import ExpensesChart from './ExpensesChart';
 
 function Expenses(props) {
 
@@ -26,6 +27,7 @@ function Expenses(props) {
         <div>
             <Card className='expenses'>
                 <ExpensesFilter selected={enteredExpenseFilter} onChangeFilter={expenseFilterChangeHandler}></ExpensesFilter>
+                <ExpensesChart expenses={filteredExpenses}></ExpensesChart>
                 <ExpensesList items={filteredExpenses}></ExpensesList>
             </Card>
         </div >
